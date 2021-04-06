@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato </title>
+
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header_form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 100px;
+        }
+
+        .section_form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 400px;
+            background-color: #96b6db;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        #nome{
+            margin-left: 47px;
+        }
+
+        #sobrenome{
+            margin-left: 23px;
+        }
+
+        #email{
+            margin-left: 45px;
+        }
+
+        #tel{
+            margin-left: 31px;
+        }
+
+        #msg{
+            margin-left: 12px;
+        }
+
+        .form-control{
+        max-height:100px;
+        max-width: 360px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header_form">
+        <h1>Formulário de Contato</h1>
+    </div>
+
+</header>
+
+            <section>
+
+                <div class="section_form">
+
+                    <form action="">
+
+                        <table border="0">
+
+                            <tr>
+                                <td>Nome</td>
+                                <td><input id="nome" type="text" required placeholder=""/></td>
+                                <td><input id="sobrenome" type="text" required placeholder="Segundo Nome" maxlength="30" autofocus autocomplete="off"/></td>
+                            </tr>
+
+                        </table>
+
+                        <br/>
+
+                        <table border="0">
+
+                            <tr>
+                                <td>E-mail</td>
+                                <td><input id="email" type="email" required placeholder="E-Mail" maxlength="30" size="48" autofocus autocomplete="off"/></td>
+                            </tr>
+
+                        </table>
+
+                        <br/>
+
+                        <table border="0">
+
+                            <tr>
+                                <td>Telefone</td>
+                                <td><input id="tel" type="" required placeholder="Telefone" maxlength="11" size="48" autofocus autocomplete="off"/></td>
+                            </tr>
+
+                        </table>
+
+                        <br/>
+
+                        <table border="0">
+
+                            <tr>
+                                <td>Mensagem</td>
+                                <td>
+                                <textarea class="form-control" maxlength="185" name="" id="msg" rows="5" cols="50"  autofocus autocomplete="off"></textarea>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <br/>
+
+                        <hr/>
+
+                        <br/>
+                
+                        <input type="submit" value="Enviar"/> 
+
+                        <input type="reset" value="Reset"/> 
+
+                    </form>
+
+                </div>
+
+            </section>
+
+</body>
+</html>
